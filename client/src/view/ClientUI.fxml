@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientUIController">
+   <children>
+      <AnchorPane fx:id="ClientID" layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="254.0" layoutY="21.0" prefHeight="36.0" prefWidth="73.0" text="Client">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtClentArea" layoutX="20.0" layoutY="73.0" prefHeight="200.0" prefWidth="561.0" promptText="Message" />
+            <TextField fx:id="txtMessageSent" layoutX="20.0" layoutY="300.0" onAction="#txtMessageSent" prefHeight="36.0" prefWidth="416.0" promptText="Text Here" />
+            <Button fx:id="btnSend" layoutX="478.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="36.0" prefWidth="98.0" text="Send" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
